@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Trang giới thiệu ba sản phẩm về lợi ích của công nghệ số trong học tập."
+  >
+  <meta name="theme-color" content="#f1f8fc">
+  <title>Giới thiệu cá nhân | [Tên của bạn]</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #123b56;
+      background: #f1f8fc;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #075985;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #e87924;
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 1;
+      padding: 0.6rem 0.9rem;
+      transform: translateY(-160%);
+      border-radius: 0.4rem;
+      background: #fff;
+      color: #123b56;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .page {
+      width: min(1100px, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    .hero {
+      padding: clamp(3rem, 9vw, 6.5rem) 0 3rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.75rem;
+      color: #39708e;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      color: #124d70;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1.15;
+    }
+
+    .name-placeholder {
+      color: #cb6a1e;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #496679;
+      font-size: clamp(1rem, 2vw, 1.15rem);
+    }
+
+    .edit-note {
+      margin: 1rem auto 0;
+      color: #526b7b;
+      font-size: 0.9rem;
+    }
+
+    .products-heading {
+      margin: 0 0 1.25rem;
+      color: #124d70;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+      padding-bottom: 3rem;
+    }
+
+    .card {
+      min-width: 0;
+      overflow: hidden;
+      padding: clamp(1rem, 3vw, 1.5rem);
+      border: 1px solid #d7e8f0;
+      border-radius: 1rem;
+      background: #fff;
+      box-shadow: 0 8px 24px rgb(27 75 102 / 8%);
+    }
+
+    .card h3 {
+      margin: 0 0 0.35rem;
+      color: #124d70;
+      font-size: 1.25rem;
+    }
+
+    .card-description {
+      margin-bottom: 1rem;
+      color: #496679;
+    }
+
+    .pdf-preview {
+      display: block;
+      width: 100%;
+      height: 34rem;
+      border: 1px solid #d7e8f0;
+      border-radius: 0.5rem;
+      background: #f1f8fc;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .actions a {
+      font-weight: 700;
+      text-underline-offset: 0.2em;
+    }
+
+    .infographic {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      background: #e5eef3;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-card {
+      grid-column: 1 / -1;
+    }
+
+    footer {
+      padding: 1.5rem 0 2rem;
+      border-top: 1px solid #d7e8f0;
+      color: #496679;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        width: min(100% - 1.5rem, 560px);
+      }
+
+      .hero {
+        padding-top: 3.5rem;
+      }
+
+      .products {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+      }
+
+      .video-card {
+        grid-column: auto;
+      }
+
+      .pdf-preview {
+        height: 70vh;
+        min-height: 22rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#noi-dung">Bỏ qua phần giới thiệu</a>
+  <main class="page" id="noi-dung">
+    <header class="hero">
+      <p class="eyebrow">Trang giới thiệu cá nhân</p>
+      <h1>Xin chào, mình là <span class="name-placeholder">[Tên của bạn]</span></h1>
+      <p class="intro">
+        Đây là nơi mình giới thiệu ba sản phẩm về lợi ích của công nghệ số trong
+        học tập: một tài liệu PDF, một infographic và một video.
+      </p>
+      <p class="edit-note">
+        Gợi ý: thay <strong>[Tên của bạn]</strong> bằng tên bạn muốn hiển thị
+        trước khi đăng trang.
+      </p>
+    </header>
+
+    <section aria-labelledby="products-heading">
+      <h2 class="products-heading" id="products-heading">Các sản phẩm của mình</h2>
+      <div class="products">
+        <article class="card" aria-labelledby="pdf-heading">
+          <h3 id="pdf-heading">Tài liệu PDF</h3>
+          <p class="card-description">
+            Xem tài liệu ngay trên trang hoặc mở và tải bản PDF về thiết bị.
+          </p>
+          <object
+            class="pdf-preview"
+            data="Lab05_Ex1.2.docx.pdf"
+            type="application/pdf"
+            aria-label="Bản xem trước tài liệu PDF về lợi ích của công nghệ số trong học tập"
+          >
+            <p>
+              Trình duyệt không hỗ trợ xem PDF trực tiếp.
+              <a href="Lab05_Ex1.2.docx.pdf">Mở hoặc tải tài liệu PDF</a>.
+            </p>
+          </object>
+          <div class="actions">
+            <a href="Lab05_Ex1.2.docx.pdf" target="_blank" rel="noopener">
+              Mở PDF trong thẻ mới
+            </a>
+            <a href="Lab05_Ex1.2.docx.pdf" download>
+              Tải PDF xuống
+            </a>
+          </div>
+        </article>
+
+        <article class="card" aria-labelledby="infographic-heading">
+          <h3 id="infographic-heading">Infographic</h3>
+          <p class="card-description">
+            Năm lợi ích của công nghệ số trong học tập được trình bày trực quan.
+          </p>
+          <img
+            class="infographic"
+            src="Lab05_Ex2.1.png"
+            alt="Infographic về năm lợi ích: truy cập thông tin nhanh chóng, kết nối toàn cầu, tiết kiệm thời gian học tập, cá nhân hóa nội dung và phát triển kỹ năng tương lai."
+            width="944"
+            height="2048"
+          >
+          <div class="actions">
+            <a href="Lab05_Ex2.1.png" target="_blank" rel="noopener">
+              Xem ảnh kích thước đầy đủ
+            </a>
+            <a href="Lab05_Ex2.1.png" download>
+              Tải infographic xuống
+            </a>
+          </div>
+        </article>
+
+        <article class="card video-card" aria-labelledby="video-heading">
+          <h3 id="video-heading">Video YouTube</h3>
+          <p class="card-description">
+            Xem video giới thiệu được chia sẻ trên YouTube.
+          </p>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/FZleWyD-z3g"
+              title="Video về lợi ích của công nghệ số trong học tập"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="actions">
+            <a
+              href="https://youtu.be/FZleWyD-z3g"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mở video trên YouTube
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer aria-label="Ghi công và bản quyền">
+      <p>
+        Ghi công infographic: hình ảnh từ Unsplash theo Unsplash License;
+        infographic ghi nhận Canva AI.
+      </p>
+      <p>
+        Video được nhúng từ YouTube; bản quyền video thuộc chủ sở hữu tương ứng.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
